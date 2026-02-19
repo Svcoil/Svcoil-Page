@@ -1,60 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
+    
+    <!-- SEO Profissional -->
+    <title>Svcoil - Criação de Sites e Landing Pages de Alto Desempenho | Desenvolvimento Web Profissional</title>
+    <meta name="description" content="Transforme seu negócio com sites profissionais e landing pages de alta conversão. Especialistas em desenvolvimento web, SEO e design responsivo. Solicite seu orçamento!">
+    <meta name="keywords" content="criação de sites, landing pages, desenvolvimento web, sites profissionais, SEO, design responsivo">
+    <meta name="author" content="Svcoil">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://svcoil.com/">
+    <meta property="og:title" content="Svcoil - Criação de Sites Profissionais">
+    <meta property="og:description" content="Desenvolvimento de Landing Pages e Sites que convertem visitantes em clientes.">
+    <meta property="og:image" content="https://svcoil.com/preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://svcoil.com/">
+    <meta property="twitter:title" content="Svcoil - Criação de Sites Profissionais">
+    <meta property="twitter:description" content="Desenvolvimento de Landing Pages e Sites que convertem visitantes em clientes.">
+    <meta property="twitter:image" content="https://svcoil.com/preview.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
     <nav class="navbar">
         <div class="logo">Svcoil</div>
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
    </header>
-    <main class="portfolio">
-    <section class="hero-business">
-        <h1>Transforme sua ideia em um <span class="highlight">Site de Alta Conversão</span></h1>
-        <p>Desenvolvimento de Landing Pages e Sites Profissionais que colocam sua empresa no topo do Google.</p>
+
+    <main>
+    <!-- SEÇÃO HERO -->
+    <section id="home" class="hero-business">
+        <div class="hero-content">
+            <h1>Transforme sua ideia em um <span class="highlight">Site de Alta Conversão</span></h1>
+            <p>Desenvolvimento de Landing Pages e Sites Profissionais que colocam sua empresa no topo do Google.</p>
+            
+            <div class="cta-group">
+                <a href="https://wa.me/5585988208404" class="btn-cta">Solicitar Orçamento</a>
+                <a href="#portfolio" class="btn-secondary">Ver Portfólio</a>
+            </div>
+        </div>
         
-        <div class="cta-group">
-            <a href="https://wa.me/85988208404" class="btn-cta">Solicitar Orçamento</a>
-            <a href="#portfolio" class="btn-secondary">Ver Projetos</a>
-            <a href="https://wa.me/85988208404" class="whatsapp-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    <span>Falar com especialista</span>
-</a>
+        <!-- Stats -->
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Projetos Entregues</p>
+            </div>
+            <div class="stat-item">
+                <h3>98%</h3>
+                <p>Satisfação</p>
+            </div>
+            <div class="stat-item">
+                <h3>24h</h3>
+                <p>Suporte Rápido</p>
+            </div>
         </div>
     </section>
 
-    <div class="services-grid" id="portfolio">
-        <div class="service-card">
-            <i class="icon">🚀</i>
-            <h3>Landing Pages</h3>
-            <p>Páginas focadas em vendas para campanhas de tráfego pago.</p>
+    <!-- SEÇÃO SERVIÇOS -->
+    <section id="servicos" class="services-section">
+        <div class="section-header">
+            <h2>Nossos <span class="highlight">Serviços</span></h2>
+            <p>Soluções completas para sua presença digital</p>
         </div>
-        <div class="service-card">
-            <i class="icon">📱</i>
-            <h3>Sites Responsivos</h3>
-            <p>Seu site perfeito em celulares, tablets e computadores.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="icon">🚀</i>
+                <h3>Landing Pages</h3>
+                <p>Páginas focadas em vendas para campanhas de tráfego pago com copywriting persuasivo e design otimizado.</p>
+                <ul class="service-features">
+                    <li>✓ Alta taxa de conversão</li>
+                    <li>✓ Integração com ferramentas de marketing</li>
+                    <li>✓ Design focado em vendas</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="icon">📱</i>
+                <h3>Sites Responsivos</h3>
+                <p>Seu site perfeito em celulares, tablets e computadores com performance otimizada.</p>
+                <ul class="service-features">
+                    <li>✓ Design mobile-first</li>
+                    <li>✓ Velocidade otimizada</li>
+                    <li>✓ UX/UI profissional</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="icon">🔍</i>
+                <h3>Otimização SEO</h3>
+                <p>Configurações para seu negócio ser encontrado nas primeiras posições do Google.</p>
+                <ul class="service-features">
+                    <li>✓ SEO On-Page completo</li>
+                    <li>✓ Performance otimizada</li>
+                    <li>✓ Indexação garantida</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="icon">⚡</i>
+                <h3>Manutenção</h3>
+                <p>Suporte contínuo com atualizações, backups e monitoramento constante.</p>
+                <ul class="service-features">
+                    <li>✓ Atualizações regulares</li>
+                    <li>✓ Backup automático</li>
+                    <li>✓ Suporte prioritário</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="icon">💼</i>
+                <h3>E-commerce</h3>
+                <p>Lojas virtuais completas com integração de pagamento e gestão de produtos.</p>
+                <ul class="service-features">
+                    <li>✓ Plataforma completa</li>
+                    <li>✓ Pagamento integrado</li>
+                    <li>✓ Gestão facilitada</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <i class="icon">🎨</i>
+                <h3>Design Personalizado</h3>
+                <p>Identidade visual única que representa a essência da sua marca.</p>
+                <ul class="service-features">
+                    <li>✓ Branding completo</li>
+                    <li>✓ UI/UX exclusivo</li>
+                    <li>✓ Prototipagem</li>
+                </ul>
+            </div>
         </div>
-        <div class="service-card">
-            <i class="icon">🔍</i>
-            <h3>Otimização SEO</h3>
-            <p>Configurações para seu negócio ser encontrado nas buscas.</p>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Sobre a <span class="highlight">Svcoil</span></h2>
+                <p class="about-intro">Somos especialistas em transformar ideias em experiências digitais de alto impacto.</p>
+                
+                <p>Com anos de experiência no mercado, desenvolvemos sites e landing pages que não apenas impressionam visualmente, mas entregam resultados reais para nossos clientes.</p>
+                
+                <p>Nossa missão é ajudar empresas e empreendedores a estabelecerem uma presença digital forte, profissional e que converte visitantes em clientes.</p>
+                
+                <div class="about-values">
+                    <div class="value-item">
+                        <h4>🎯 Foco em Resultados</h4>
+                        <p>Cada projeto é desenvolvido pensando em conversão e ROI</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>⚡ Agilidade</h4>
+                        <p>Entregamos projetos dentro do prazo sem comprometer a qualidade</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>🤝 Parceria</h4>
+                        <p>Trabalhamos lado a lado com você em cada etapa</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <div class="tech-stack">
+                    <h3>Tecnologias</h3>
+                    <div class="tech-icons">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>WordPress</span>
+                        <span>SEO</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- SEÇÃO PORTFÓLIO -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header">
+           
+    
+        
+       
+       
+        
+    </section>
+
+    <!-- SEÇÃO PROCESSO -->
+    <section id="processo" class="process-section">
+        <div class="section-header">
+            <h2>Como <span class="highlight">Trabalhamos</span></h2>
+            <p>Um processo simples e transparente</p>
+        </div>
+        
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Briefing</h3>
+                <p>Entendemos suas necessidades, objetivos e público-alvo para criar a estratégia perfeita.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Planejamento</h3>
+                <p>Desenvolvemos wireframes, escolhemos paleta de cores e definimos a arquitetura do site.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Desenvolvimento</h3>
+                <p>Transformamos o design em código limpo, otimizado e responsivo.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Testes & Ajustes</h3>
+                <p>Testamos em diversos dispositivos e navegadores, fazendo ajustes necessários.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">5</div>
+                <h3>Lançamento</h3>
+                <p>Publicamos seu site e configuramos todas as ferramentas de análise e SEO.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DEPOIMENTOS -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="section-header">
+            <h2>O que Dizem Nossos <span class="highlight">Clientes</span></h2>
+            <p>Resultados que falam por si</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"A Svcoil transformou completamente nossa presença online. O site ficou incrível e as conversões aumentaram 300%!"</p>
+                <div class="testimonial-author">
+                    <strong>Maria Silva</strong>
+                    <span>CEO - Studio Bella</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Profissionalismo e qualidade do início ao fim. Recomendo a todos que querem um site de verdade!"</p>
+                <div class="testimonial-author">
+                    <strong>João Santos</strong>
+                    <span>Diretor - Tech Innovation</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Landing page que realmente converte. Recuperamos o investimento em menos de 1 mês. Excelente trabalho!"</p>
+                <div class="testimonial-author">
+                    <strong>Ana Costa</strong>
+                    <span>Fundadora - Crescer Mais</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO FAQ -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <h2>Perguntas <span class="highlight">Frequentes</span></h2>
+            <p>Tire suas dúvidas</p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Quanto tempo leva para criar um site?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>O prazo varia de acordo com a complexidade do projeto. Um site institucional leva de 7 a 15 dias, enquanto e-commerces podem levar de 3 a 6 semanas.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    Qual o investimento para criar um site?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Os valores variam conforme as funcionalidades necessárias. Entre em contato para um orçamento personalizado sem compromisso.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    O site será responsivo?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! Todos os nossos sites são desenvolvidos com design responsivo, funcionando perfeitamente em celulares, tablets e computadores.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    Vocês oferecem suporte após a entrega?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! Oferecemos 30 dias de suporte gratuito após a entrega. Também temos planos de manutenção mensal para garantia contínua.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    Posso atualizar o conteúdo do site sozinho?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Sim! Desenvolvemos com CMS (WordPress) ou fornecemos treinamento para que você possa fazer atualizações básicas facilmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="contact-section">
+        <div class="section-header">
+            <h2>Vamos Trabalhar <span class="highlight">Juntos?</span></h2>
+            <p>Entre em contato e solicite seu orçamento</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>(85) 98820-8404</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>contato@svcoil.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <strong>Localização</strong>
+                        <p>Fortaleza, CE - Brasil</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Seu Telefone" required>
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="">Selecione o serviço</option>
+                        <option value="landing">Landing Page</option>
+                        <option value="site">Site Institucional</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="seo">Otimização SEO</option>
+                        <option value="manutencao">Manutenção</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Conte-nos sobre seu projeto" required></textarea>
+                </div>
+                <button type="submit" class="btn-cta">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
 </main>
 
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/5585988208404" class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <span>Falar com especialista</span>
+</a>
+
 <footer>
-    <p>&copy; 2026 Svcoil. All rights reserved.</p>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Svcoil</h3>
+            <p>Transformando ideias em sites de alta conversão desde 2020.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Links Rápidos</h4>
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Serviços</h4>
+            <ul>
+                <li><a href="#servicos">Landing Pages</a></li>
+                <li><a href="#servicos">Sites Responsivos</a></li>
+                <li><a href="#servicos">E-commerce</a></li>
+                <li><a href="#servicos">SEO</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <ul>
+                <li>📱 (85) 98820-8404</li>
+                <li>📧 contato@svcoil.com</li>
+                <li>📍 Fortaleza, CE</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2026 Svcoil. Todos os direitos reservados.</p>
+        <p>Desenvolvido com 💙 por Svcoil</p>
+    </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
